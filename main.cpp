@@ -1,6 +1,10 @@
 #include "Blockchain.h"
+#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main() {
+    
     Blockchain bChain = Blockchain();
 
     cout << "Mining block 1..." << endl; //endl is like new line

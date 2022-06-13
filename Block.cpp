@@ -2,6 +2,8 @@
 #include "sha256.h"
 #include <time.h>
 #include <sstream>
+//#include <stdio.h>
+using namespace std;
 
 // The section after the : is an initialisation list, initialises the variables _nIndex and
 // _sData to specific values before the body of the constructor executes
@@ -12,9 +14,9 @@ Block::Block(uint32_t nIndexIn, const string &sDataIn) : _nIndex(nIndexIn), _sDa
     sHash = _CalculateHash();
 }
  
-string Block::GetHash() {
-    return _sHash;
-}
+//string Block::GetHash() {
+//    return_sHash;
+//}
 
 void Block::MineBlock(uint32_t nDifficulty) 
 {
@@ -32,6 +34,8 @@ void Block::MineBlock(uint32_t nDifficulty)
         sHash = _CalculateHash();
     } 
     while (sHash.substr(0,nDifficulty) != str);
+
+    cout << "Block Mined: " << sHash << endl;
 };
 
 // inline function improves efficiency, cuts down on seperate method calls 

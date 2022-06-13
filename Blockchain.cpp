@@ -2,11 +2,11 @@
 
 Blockchain::Blockchain() {
     _vChain.emplace_back(Block(0,"Genesis Block"));
-    _nDifficulty = 6;
+    _nDifficulty = 5;
 };
 
 void Blockchain::AddBlock(Block bNew) {
-    bNew.sPrevHash = _GetLastBlock().GetHash();
+    bNew.sPrevHash = _GetLastBlock().sHash;
     bNew.MineBlock(_nDifficulty);
     _vChain.push_back(bNew);
 };
