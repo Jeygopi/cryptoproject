@@ -7,7 +7,7 @@
 
 ## Current Progress
 
-![alt text](https://github.com/Jeygopi/cryptoproject/images_progress/exampleofminedblocks.png)
+![alt text](https://github.com/Jeygopi/cryptoproject/blob/master/images_progress/exampleofminedblocks.PNG)
 
 ## To-Do
 
