@@ -5,6 +5,7 @@ using namespace std;
 class Block {
 
 public:
+    string sHash;
     string sPrevHash;
 
     Block(uint32_t nIndexIn, const string &sDataIn);

@@ -13,4 +13,4 @@ int main() {
     bChain.AddBlock(Block(3, "Block 3 Data"));
 
     return 0;
-}
+};
