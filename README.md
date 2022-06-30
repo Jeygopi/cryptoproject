@@ -1,4 +1,4 @@
-# H1 Proof of work (Modified) Cryptocurrency 
+# Proof of work (Modified) Cryptocurrency 
 
 ## ChangeLog
 
